@@ -117,8 +117,10 @@
                         select_service: $('#select_service').val(),
                         select_price: $('#select_price').val(),
                         comments: $('#comments').val(),
-                        verify: $('#verify').val()
-                    },
+                        verify: $('#verify').val(),
+                    __RequestVerificationToken: $('[name=__RequestVerificationToken]').val()
+                },
+                    
                     function(data) {
                         document.getElementById('message').innerHTML = data;
                         $('#message').slideDown('slow');

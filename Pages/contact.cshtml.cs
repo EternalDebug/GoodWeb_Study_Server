@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Serv3.Pages
 {
-    [IgnoreAntiforgeryToken]
+    [AutoValidateAntiforgeryToken]
     public class ContactModel : PageModel
     {
         private readonly ILogger<ContactModel> _logger;
@@ -27,14 +27,16 @@ namespace Serv3.Pages
 
         public IActionResult OnPost(formDate fd)
         {
-            /*using var sw = new StreamWriter("logs.csv", true);
+            using var sw = new StreamWriter("logs.csv", true);
             using var csvw = new CsvWriter(sw, CultureInfo.InvariantCulture);
             csvw.NextRecord();
             csvw.WriteRecord(fd);
-            //Message = $"Ваше имя: {username}";*/
+            //Message = $"Ваше имя: {username}";
             return Content("<fieldset>" +
                 " <div id='success_page'>" +
-                " <h1>Email Sent Successfully.</h1> <p>Thank you <strong>$first_name</strong>, your message has been submitted to us.</p>" +
+                " <h1>Email Sent Successfully.</h1> <p>Thank you <strong>" +
+                fd.first_name.ToString() +
+                "</strong>, your message has been submitted to us.</p>" +
                 " </div>" +
                 " </fieldset>");
         }
