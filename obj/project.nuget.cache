@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2r262xEjNdXb7lpSXaQ89gr4x7q/4Q9RKvZxtq3e2BU3iKZEoU8n1F9Mh/bXTPLUBuFi9cdsGR6Cwxl5MlgJZw==",
+  "dgSpecHash": "czMOy1EwfP9+8j6GpY93QHdSuNaQOI0BzWBfvjUkMof9R7jGaAirJyMf+Eq0Nz2ghSidyE+Wvc+RRg3yEfBnAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\stalk\\OneDrive\\Рабочий стол\\ЛабыМаг\\1 курс\\Serv3\\Serv3.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\stalk\\.nuget\\packages\\csvhelper\\31.0.2\\csvhelper.31.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
