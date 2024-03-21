@@ -4,6 +4,7 @@ using CsvHelper;
 using CsvHelper.Configuration;
 using System.Globalization;
 using System.IO;
+using System.Diagnostics.Metrics;
 
 namespace Serv3.Pages
 {
@@ -27,6 +28,14 @@ namespace Serv3.Pages
 
         public IActionResult OnPost(formDate fd)
         {
+            if (fd.first_name is null)
+                return Content("<div class=" + "error_message" + ">Attention! You must enter your name.</div>");
+            if (fd.last_name is null)
+                return Content("<div class=" + "error_message" + ">Attention! You must enter your name.</div>");
+            if (fd.comments is null)
+                return Content("<div class=\"error_message\">Attention! Please enter your message.</div>");
+
+
             using var sw = new StreamWriter("logs.csv", true);
             using var csvw = new CsvWriter(sw, CultureInfo.InvariantCulture);
             csvw.NextRecord();
