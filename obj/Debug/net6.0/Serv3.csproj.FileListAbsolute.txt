@@ -29,3 +29,7 @@ C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\
 C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\bin\Debug\net6.0\CsvHelper.dll
 C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\obj\Debug\net6.0\Serv3.csproj.AssemblyReference.cache
 C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\obj\Debug\net6.0\Serv3.csproj.CopyComplete
+C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\stalk\OneDrive\Рабочий стол\ЛабыМаг\1 курс\Serv3\bin\Debug\net6.0\portfolio.json
