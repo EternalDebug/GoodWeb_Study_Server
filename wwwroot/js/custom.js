@@ -137,6 +137,41 @@
     });
 
     /* ==============================================
+     TESTIMONIALS -->
+     =============================================== */
+    jQuery(document).ready(function () {
+        $('#testsform').submit(function () {
+            var action = $(this).attr('action');
+            $("#message").slideUp(750, function () {
+                $('#message').hide();
+                $('#submit')
+                    .after('<img src="images/ajax-loader.gif" class="loader" />')
+                    .attr('disabled', 'disabled');
+                $.post(action, {
+                    title: $('#title').val(),
+                    name: $('#name').val(),
+                    occupation: $('#occupation').val(),
+                    test_text: $('#test_text').val(),
+                    //verify: $('#verify').val(),
+                    //__RequestVerificationToken: $('[name=__RequestVerificationToken]').val()
+                },
+
+                    function (data) {
+                        document.getElementById('message').innerHTML = data;
+                        $('#message').slideDown('slow');
+                        $('#testsform img.loader').fadeOut('slow', function () {
+                            $(this).remove()
+                        });
+                        $('#submit').removeAttr('disabled');
+                        if (data.match('success') != null) $('#testsform').slideUp('slow');
+                    }
+                );
+            });
+            return false;
+        });
+    });
+
+    /* ==============================================
      CODE WRAPPER -->
      =============================================== */
 

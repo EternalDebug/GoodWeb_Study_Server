@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M2Tpf+GZgnMXF/0AGBGESrnvlS5m2CX66YboGdKNOiw=",
+  "Hash": "/N8a8R5C5zkojVuMjqrA6BiWDWzNBi961tn8wxtSwAE=",
   "Source": "Serv3",
   "BasePath": "_content/Serv3",
   "Mode": "Default",
@@ -4316,6 +4316,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\about_02.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\stalk\\OneDrive\\Рабочий стол\\ЛабыМаг\\1 курс\\Serv3\\wwwroot\\uploads\\ava.png",
+      "SourceId": "Serv3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\stalk\\OneDrive\\Рабочий стол\\ЛабыМаг\\1 курс\\Serv3\\wwwroot\\",
+      "BasePath": "_content/Serv3",
+      "RelativePath": "uploads/ava.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ava.png"
     },
     {
       "Identity": "C:\\Users\\stalk\\OneDrive\\Рабочий стол\\ЛабыМаг\\1 курс\\Serv3\\wwwroot\\uploads\\device_03.png",

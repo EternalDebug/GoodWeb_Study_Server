@@ -1,5 +1,6 @@
 ﻿@page
 @model TestiModel
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Antiforgery
 @{
     ViewData["Title"] = "Testimonials";
 }
@@ -17,6 +18,45 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div id="testimonial" class="section wb">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Get in touch</h3>
+            <p class="lead">You can express your testimonials to us by filling out this form. <br>We have million of website owners who happy to work with us!</p>
+        </div><!-- end title -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="tests_form">
+                    <div id="message"></div>
+                    <form id="testsform" class="row" name="testsform" method="post">
+
+                        <fieldset class="row-fluid">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <input type="text" name="title" id="title" class="form-control" placeholder="Title">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <input type="text" name="occupation" id="occupation" class="form-control" placeholder="Your Occupation">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <textarea type="text" name="test_text" id="test_text" class="form-control" rows="3" placeholder="Your Testimonial"></textarea>
+                            </div>
+                            @Html.AntiForgeryToken()
+                            @* <input id="RequestVerificationToken" type="hidden" value="@requestToken" /> *@
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                                <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Submit</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
     </div>
 </div>
 

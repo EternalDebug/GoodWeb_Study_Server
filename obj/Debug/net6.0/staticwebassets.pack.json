@@ -1013,6 +1013,10 @@
       "PackagePath": "staticwebassets\\uploads\\about_02.jpg"
     },
     {
+      "Id": "C:\\Users\\stalk\\OneDrive\\Рабочий стол\\ЛабыМаг\\1 курс\\Serv3\\wwwroot\\uploads\\ava.png",
+      "PackagePath": "staticwebassets\\uploads\\ava.png"
+    },
+    {
       "Id": "C:\\Users\\stalk\\OneDrive\\Рабочий стол\\ЛабыМаг\\1 курс\\Serv3\\wwwroot\\uploads\\device_03.png",
       "PackagePath": "staticwebassets\\uploads\\device_03.png"
     },
