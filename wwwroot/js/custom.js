@@ -139,11 +139,11 @@
     /* ==============================================
      TESTIMONIALS -->
      =============================================== */
-    jQuery(document).ready(function () {
-        $('#testsform').submit(function () {
+    /*jQuery(document).ready(function () {
+        $('#testimonialform').submit(function () {
             var action = $(this).attr('action');
-            $("#message").slideUp(750, function () {
-                $('#message').hide();
+            $("#message2").slideUp(750, function () {
+                $('#message2').hide();
                 $('#submit')
                     .after('<img src="images/ajax-loader.gif" class="loader" />')
                     .attr('disabled', 'disabled');
@@ -157,19 +157,19 @@
                 },
 
                     function (data) {
-                        document.getElementById('message').innerHTML = data;
-                        $('#message').slideDown('slow');
-                        $('#testsform img.loader').fadeOut('slow', function () {
+                        document.getElementById('message2').innerHTML = data;
+                        $('#message2').slideDown('slow');
+                        $('#testimonialform img.loader').fadeOut('slow', function () {
                             $(this).remove()
                         });
                         $('#submit').removeAttr('disabled');
-                        if (data.match('success') != null) $('#testsform').slideUp('slow');
+                        if (data.match('success') != null) $('#testimonialform').slideUp('slow');
                     }
                 );
             });
             return false;
         });
-    });
+    });*/
 
     /* ==============================================
      CODE WRAPPER -->

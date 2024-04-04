@@ -48,13 +48,15 @@ namespace Serv3.Pages
             csvw.NextRecord();
             csvw.WriteRecord(ft);
 
-            return Content("<fieldset>" +
+            /*return Content("<fieldset>" +
                 " <div id='success_page'>" +
                 " <h1>Email Sent Successfully.</h1> <p>Thank you <strong>" +
                 ft.name.ToString() +
                 "</strong>, your testimonial has been submitted to us.</p>" +
                 " </div>" +
-                " </fieldset>");
+                " </fieldset>");*/
+            
+            return RedirectToPage("./Testimonials");
         }
     }
 }
