@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using Serv3.Data;
 using System.IO;
 using System.Text.Json;
@@ -14,15 +15,20 @@ namespace Serv3.Pages
         private readonly JsonContext _JsonContext;
         public List<Portfolio> portfolios { get; set; }
 
-        public PortModel(ILogger<PortModel> logger, JsonContext jc)
+        private readonly DatabaseContext _context;
+        public List<Testimonial> Testimonials { get; set; }
+
+        public PortModel(ILogger<PortModel> logger, JsonContext jc, DatabaseContext db)
         {
             _logger = logger;
             _JsonContext = jc;
+            _context = db;
         }
 
         public void OnGet()
         {
             portfolios = _JsonContext.portfolios;
+            Testimonials = _context.tests.AsNoTracking().ToList();
         }
     }
 }
